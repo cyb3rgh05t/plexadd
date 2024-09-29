@@ -141,11 +141,28 @@ class app(commands.Cog):
     
     @commands.Cog.listener()
     async def on_ready(self):
-        print('------')
-        print("{:^41}".format(f"StreamNet Plex Inviter V {MEMBARR_VERSION}"))
-        print(f'Made by cyb3rgh05t https://github.com/cyb3rgh05t/\n')
+        ascii_logo = r"""
+      @@@@@@@  @@@ @@@  @@@@@@@   @@@@@@   @@@@@@@    @@@@@@@@  @@@  @@@   @@@@@@@@   @@@@@@@  @@@@@@@  
+@@@@@@@@  @@@ @@@  @@@@@@@@  @@@@@@@  @@@@@@@@  @@@@@@@@@  @@@  @@@  @@@@@@@@@@  @@@@@@@  @@@@@@@  
+!@@       @@! !@@  @@!  @@@      @@@  @@!  @@@  !@@        @@!  @@@  @@!   @@@@  !@@        @@!    
+!@!       !@! @!!  !@   @!@      @!@  !@!  @!@  !@!        !@!  @!@  !@!  @!@!@  !@!        !@!    
+!@!        !@!@!   @!@!@!@   @!@!!@   @!@!!@!   !@! @!@!@  @!@!@!@!  @!@ @! !@!  !!@@!!     @!!    
+!!!         @!!!   !!!@!!!!  !!@!@!   !!@!@!    !!! !!@!!  !!!@!!!!  !@!!!  !!!  @!!@!!!    !!!    
+:!!         !!:    !!:  !!!      !!:  !!: :!!   :!!   !!:  !!:  !!!  !!:!   !!!      !:!    !!:    
+:!:         :!:    :!:  !:!      :!:  :!:  !:!  :!:   !::  :!:  !:!  :!:    !:!      !:!    :!:    
+ ::: :::     ::     :: ::::  :: ::::  ::   :::   ::: ::::  ::   :::  ::::::: ::  :::: ::     ::    
+ :: :: :     :     :: : ::    : : :    :   : :   :: :: :    :   : :   : : :  :   :: : :      :     
+                                                                                                   
+    """
+        print(ascii_logo)
+        print('=====================================================')
+        print(f"PlexAdd Version {PLEXADD_VERSION}")
+        print(f'Author: cyb3rgh05t https://github.com/cyb3rgh05t/\n')
+        print('=====================================================')
+        print(f"To support this project, please visit")
+        print(f"https://github.com/cyb3rgh05t/plexadd")
+        print('=====================================================')
         print(f'Logged in as {self.bot.user} (ID: {self.bot.user.id})')
-        print('------')
 
         # TODO: Make these debug statements work. roles are currently empty arrays if no roles assigned.
         if plex_roles is None:
