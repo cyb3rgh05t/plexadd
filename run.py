@@ -7,7 +7,7 @@ from discord.ui import Button, View, Select
 from discord import app_commands
 import asyncio
 import sys
-from app.bot.helper.confighelper import MEMBARR_VERSION, switch, Discord_bot_token, plex_roles, jellyfin_roles
+from app.bot.helper.confighelper import PLEXADD_VERSION, switch, Discord_bot_token, plex_roles, jellyfin_roles
 import app.bot.helper.confighelper as confighelper
 import app.bot.helper.jellyfinhelper as jelly
 from app.bot.helper.message import *
