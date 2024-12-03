@@ -1,4 +1,4 @@
-FROM python:3.9.1-alpine
+FROM python:3.13.0-alpine
 
 # Github Owner 
 LABEL maintainer=cyb3rgh05t
