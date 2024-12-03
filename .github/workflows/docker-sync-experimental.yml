@@ -33,13 +33,13 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
       -
         name: Build and push to membarr
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v6
         with:
           push: true
           tags: yoruio/membarr:experimental
       -
         name: Build and push to invitarr
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v6
         with:
           push: true
           tags: yoruio/invitarr:experimental
